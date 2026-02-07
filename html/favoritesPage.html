@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>ViHigh | Favorites</title>
+        
+        <link rel="icon"  type="image/png" href="../images/logoOnly.png">
+	    <link rel="stylesheet" href="../css/favoritesCSS.css">
+	    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+	    <style>
+	    	* {
+	    		font-family: 'Poppins';
+	    	}
+            .title {
+                font-family: "Princess Sofia", cursive;
+                font-weight: 400;
+            }
+    	</style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <img class="logo" src="../images/logoHorizontal.png" alt="logo">
+                <a class="homeNav" href="homePage.html">Home</a>
+                <a class="artNav" href="artGalleryPage.html">Art Gallery</a>
+                <a class="gallNav" href="personalGalleryPage.html">Gallery</a>
+                <a class="favNav" href="favoritesPage.html">Favorites</a>
+                <a class="libNav" href="personalLibraryPage.html">Library</a>
+                <a href="#"><img src="../images/pfp.png" alt="pfp" class="pfp"></a>
+            </nav>
+
+            <div class="accOverlay">
+                <button class="close-btn">&times;</button>
+                <img src="../images/pfp.png" alt="pfp" class="pfpOverlay">
+                <button class="changePfp">↺</button>
+                <h2 class="nameOverlay">Display Name</h2>
+                <p class="username">@username</p>
+                <button class="logOutOverlay">Log Out</button>
+            </div>
+        </header>
+        <article>
+            <div class="intro">
+                <h2 class="title">Favorites</h2>
+            </div>
+
+            <aside>
+                <div class="carouselWrapper">
+                    <h6 class="carouselTitle">Comics</h6>
+                    <button class="arrowLeft" onclick="scrollCarousel('comics', -1)">❮</button>
+
+                    <div class="carousel" id="comics">
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/starsStripe.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Stars and S.T.R.I.P.E.</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/animalMan.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Animal Man (1988)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/batgirl2000.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Batgirl (2000)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/batgirl2009.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Batgirl (2009)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/blueBeetle.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Blue Beetle (2006)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/bop99.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Birds of Prey (1999)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/doomPatrol.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Doom Patrol (1987)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/hellblazer.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Hellblazer (1988)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/impulse95.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Impulse (1995)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/jsa99.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">JSA (1999)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/robin2021.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Robin (2021)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/sbRavers.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">SB and the Ravers</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/superboy.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Superboy (1994)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/yj98.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Young Justice (1998)</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/comics/ww87.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Wonder Woman (87)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrowRight" onclick="scrollCarousel('comics', 1)">❯</button>
+                </div>
+                <hr>
+                <div class="carouselWrapper">
+                    <h6 class="carouselTitle">Films</h6>
+                    <button class="arrowLeft" onclick="scrollCarousel('films', -1)">❮</button>
+
+                    <div class="carousel" id="films">
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/unfortunateEvents.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Unfortunate Events</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/3below.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">3Below</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/dcLegends.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Legends of Tomorrow</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/greenhouseAcad.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">GreenHouse Acad</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/jurassicCamp.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Camp Cretaceous</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/strangerThings.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Stranger Things</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/mariaClara.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Maria Clara at Ibarra</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/mysteryAaravos.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Mystery of Aaravos</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/pupAcad.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Pup Academy</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/stargirl.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Stargirl</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/sweetTooth.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Sweet Tooth</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/theArrow.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Arrow</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/theFlash.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">The Flash</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/theInbestigators.webp"></div>
+                            <div class="details">
+                                <p class="cardTitle">The Inbestigators</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/theUnlisted.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">The Unlisted</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/trollHunters.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Trollhunters</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/voltron.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Voltron</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/wizardsArcadia.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Wizards</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/worstWitch.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Worst Witch</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/films/supergirl.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Supergirl</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrowRight" onclick="scrollCarousel('films', 1)">❯</button>
+                </div>
+                <hr>
+                <div class="carouselWrapper">
+                    <h6 class="carouselTitle">Games</h6>
+                    <button class="arrowLeft" onclick="scrollCarousel('games', -1)">❮</button>
+
+                    <div class="carousel" id="games">
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/animalCrossing.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Animal Crossing</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/callOfDuty.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Call of Duty</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/games.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Minecraft</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/genshinImpact.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Genshin Impact</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/papaCupcake.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Papa's Cupcakeria</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/papaFreezeria.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Papa's Freezeria</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/roblox.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Roblox</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/stardewValley.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Stardew Valley</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/tocaBoca.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Toca Boca</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/games/valorant.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Valorant</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrowRight" onclick="scrollCarousel('games', 1)">❯</button>
+                </div>
+                <hr>
+                <div class="carouselWrapper">
+                    <h6 class="carouselTitle">Minecraft Series</h6>
+                    <button class="arrowLeft" onclick="scrollCarousel('mcSeries', -1)">❮</button>
+
+                    <div class="carousel" id="mcSeries">
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/misadventures.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Misadventures</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/3rdLife.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">3rd Life</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/afterLife.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">After Life</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/cookieGod1000.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">1000 Days Hardcore</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/crazyCraft.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Crazy Craft</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/doubleLife.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Double Life</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/empires.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Empires Season 1</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/hermitcraft7.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Hermitcraft Season 7</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/jumperLS.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">JumperWho LifeSteal</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/mapiccLS.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Mapicc Lifesteal</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/xLife.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">X Life</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/trollCraft.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Troll Craft</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/squiddoLS.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Squiddo Lifesteal</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/spokeUU.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">Unstable Universe</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/mcSeries/oneLife.avif"></div>
+                            <div class="details">
+                                <p class="cardTitle">One Life</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrowRight" onclick="scrollCarousel('mcSeries', 1)">❯</button>
+                </div>
+                <hr>
+                <div class="carouselWrapper">
+                    <h6 class="carouselTitle">Characters</h6>
+                    <button class="arrowLeft" onclick="scrollCarousel('chara', -1)">❮</button>
+
+                    <div class="carousel" id="chara">
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/bart.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Bart Allen</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/courtney.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Courtney Whitmore</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/damian.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Damian Wayne</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/steph.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Stephanie Brown</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/helena.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Helena Bertinelli</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/jaime.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Jaime Reyes</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/zatanna.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Zatanna Zatara</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/maps.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Mia Mizoguchi</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/kon.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Kon-el</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/john.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">John Constantine</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/barbara.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Barbara Gordon</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/buddy.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Buddy Baker</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/cass.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Cassandra Cain</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/virgil.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Virgil Hawkins</p>
+                            </div>
+                        </div>
+                        <div class="cardWrapper">
+                            <div class="card"><img src="../images/characters/diana.jpg"></div>
+                            <div class="details">
+                                <p class="cardTitle">Diana Prince</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrowRight" onclick="scrollCarousel('chara', 1)">❯</button>
+                </div>
+            </aside>
+        </article>
+        <script>
+            function scrollCarousel(id, direction) {
+            const carousel = document.getElementById(id);
+            const scrollAmount = 300;
+            carousel.scrollLeft += direction * scrollAmount;
+            }
+        </script>
+        <script src="../js/overlay.js"></script>
+    </body>
+</html>

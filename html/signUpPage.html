@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ViHigh | Sign Up</title>
+	
+	<link rel="icon"  type="image/png" href="../images/logoOnly.png">
+	<link rel="stylesheet" href="../css/signUpCSS.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Princess+Sofia&display=swap" rel="stylesheet">
+	
+	<style>
+		* {
+			font-family: 'Poppins';
+			font-size: 22px;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="background-rectangle">
+		<div class="content">
+		<img src="../images/logoOnly.png" class="logo" alt="ViHigh Logo">
+		
+		<div class="form-container">
+			<h2>Signup Form</h2>
+			<div class="tabs">
+				<button class="tab" id="login-tab">Login</button>
+				<button class="tab active" id="signup-tab">Sign up</button>
+			</div>
+			<form id="signup-form">
+				<input type="text" placeholder="Username" class="username" required>
+				<input type="text" placeholder="Name" class="name" required>
+				<br>
+				<input type="password" placeholder="Password" class="password" required>
+				<br>
+				<input type="password" placeholder="Confirm password" class="confirmPassword" required>
+				<br>
+				<button type="submit" class="signUpButton">Signup</button>
+			</form>
+			<p class="redirect">Already have an account? <a href="loginPage.html">Login here</a></p>
+		</div>
+		</div>
+		</div>
+	</main>
+	<script>
+		document.getElementById('login-tab').addEventListener('click', () => {
+			window.location.href = 'loginPage.html';
+		});
+	</script>
+	<script src="../js/signUpScript.js"></script>
+</body>
+</html>

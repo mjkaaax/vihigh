@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>ViHigh | Personal Gallery</title>
+        
+        <link rel="icon"  type="image/png" href="../images/logoOnly.png">
+	    <link rel="stylesheet" href="../css/personalGalleryCSS.css">
+	    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+	    <style>
+	    	* {
+	    		font-family: 'Poppins';
+	    	}
+            .title {
+                font-family: "Princess Sofia", cursive;
+                font-weight: 400;
+            }
+    	</style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <img class="logo" src="../images/logoHorizontal.png" alt="logo">
+                <a class="homeNav" href="homePage.html">Home</a>
+                <a class="artNav" href="artGalleryPage.html">Art Gallery</a>
+                <a class="gallNav" href="personalGalleryPage.html">Gallery</a>
+                <a class="favNav" href="favoritesPage.html">Favorites</a>
+                <a class="libNav" href="personalLibraryPage.html">Library</a>
+                <a href="#"><img src="../images/pfp.png" alt="pfp" class="pfp"></a>
+            </nav>
+
+            <div class="accOverlay">
+                <button class="close-btn">&times;</button>
+                <img src="../images/pfp.png" alt="pfp" class="pfpOverlay">
+                <button class="changePfp">↺</button>
+                <h2 class="nameOverlay">Display Name</h2>
+                <p class="username">@username</p>
+                <button class="logOutOverlay">Log Out</button>
+            </div>
+        </header>
+        <article>
+            <div class="intro">
+                <h2 class="title">Gallery</h2>
+            </div>
+
+            <div class="albumOverlay" id="albumOverlay">
+                <button class="overlayClose">&times;</button>
+                <button class="arrow left">&#10094;</button>
+                <img id="overlayImage" src="" alt="Album photo">
+                <button class="arrow right">&#10095;</button>
+            </div>
+
+            <aside>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/travelAlbum.png" alt="travelAlbum">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="cardTitle">Travels</h2>
+                        <hr>
+                        <p>
+                            This album showcases places I’ve visited and moments from my travels. Each photo reflects my experiences, discoveries, and memories along the way.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/animalAlbum.png" alt="animalAlbum">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="cardTitle">Animals</h2>
+                        <hr>
+                        <p>
+                            This album is dedicated to animals I’ve encountered and photographed. Each photo shows their charm, expressions, and unique personalities.    
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/peopleAlbum.png" alt="peopleAlbum">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="cardTitle">People</h2>
+                        <hr>
+                        <p>
+                            This album features photos of people who matter to me. Each photo captures emotions, moments, and personalities that make every memory special.    
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/natureAlbum.png" alt="natureAlbum">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="cardTitle">Nature</h2>
+                        <hr>
+                        <p>
+                            This album features scenes from nature that caught my eye. Each photo captures the beauty, calm, and details found in the world around me.    
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/eventAlbum.png" alt="eventAlbum">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="cardTitle">Events</h2>
+                        <hr>
+                        <p>
+                            This album highlights events I’ve attended and moments worth remembering. Each photo tells a story of celebrations, milestones, and shared experiences.    
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../images/videoAlbum.png" alt="videoAlbum">
+                    </div>
+                    <div class="card-content">
+                        <h2 class="cardTitle">Videos</h2>
+                        <hr>
+                        <p>
+                            This album contains videos I’ve recorded over time. Each clip captures moments, movements, and memories that photos alone can’t fully show.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </article>
+        <script src="../js/gallery.js"></script>
+        <script src="../js/overlay.js"></script>
+    </body>
+</html>

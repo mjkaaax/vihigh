@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>ViHigh | Art Gallery</title>
+        
+        <link rel="icon"  type="image/png" href="../images/logoOnly.png">
+	    <link rel="stylesheet" href="../css/artGalleryCSS.css">
+	    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap" rel="stylesheet">
+	    <style>
+	    	* {
+	    		font-family: 'Poppins';
+	    	}
+            .title {
+                font-family: "Princess Sofia", cursive;
+                font-weight: 400;
+            }
+    	</style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <img class="logo" src="../images/logoHorizontal.png" alt="logo">
+                <a class="homeNav" href="homePage.html">Home</a>
+                <a class="artNav" href="artGalleryPage.html">Art Gallery</a>
+                <a class="gallNav" href="personalGalleryPage.html">Gallery</a>
+                <a class="favNav" href="favoritesPage.html">Favorites</a>
+                <a class="libNav" href="personalLibraryPage.html">Library</a>
+                <a href="#"><img src="../images/pfp.png" alt="pfp" class="pfp"></a>
+            </nav>
+
+            <div class="accOverlay">
+                <button class="close-btn">&times;</button>
+                <img src="../images/pfp.png" alt="pfp" class="pfpOverlay">
+                <button class="changePfp">↺</button>
+                <h2 class="nameOverlay">Display Name</h2>
+                <p class="username">@username</p>
+                <button class="logOutOverlay">Log Out</button>
+            </div>
+        </header>
+        <article>
+            <h2 class="title">Art Gallery</h2>
+            <h5 class="subtitle">An Exhibit of English III Outputs</h5>
+            
+            <aside>
+            </aside>
+        </article>
+        <script src="../js/artGallery.js"></script>
+        <script src="../js/overlay.js"></script>
+    </body>
+</html>
